@@ -1,0 +1,812 @@
+.main_content {
+    margin-top: 88px;
+
+    @media (min-width:768px) {
+        margin-top: 0;
+    }
+
+    .Nature {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 800px;
+
+        .Nature_item {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+
+        .Nature_text {
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            line-height: calc(20 / 14);
+            font-weight: 600;
+            font-family: "Noto Serif JP";
+            padding-top: 17px;
+            padding-left: 22px;
+            padding-right: 22px;
+
+            @media (min-width:768px) {
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 16px;
+                letter-spacing: 0.07em;
+                line-height: calc(28 / 16);
+            }
+        }
+    }
+
+    .history {
+        margin-top: 90px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 21px;
+        padding-right: 21px;
+        max-width: 1100px;
+
+        @media (min-width:768px) {
+            margin-top: 146px;
+            justify-content: center;
+        }
+
+        .history_title {
+            border-top: 1px solid #666666;
+            border-bottom: 1px solid #666666;
+            font-size: 24px;
+            letter-spacing: 0.08em;
+            font-weight: bold;
+            font-family: "Noto Sans Javanese";
+            display: inline-block;
+            margin-bottom: 48px;
+
+            @media (min-width:768px) {
+                font-size: 28px;
+                letter-spacing: 0.09em;
+                line-height: calc(28 / 44);
+                padding: 17px 0;
+                margin-bottom: 114px;
+                border: none;
+                width: 100%;
+                text-align: center;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 148px;
+                    height: 1px;
+                    background: #666666;
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    top: -70px;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 148px;
+                    height: 1px;
+                    background: #666666;
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    top: 70px;
+                }
+
+            }
+        }
+
+        .history_item.img_set {
+
+            @media (min-width:768px) {
+                display: block;
+                width: calc(500 / 1100 * 100%);
+            }
+
+            @media (min-width:1300px) {
+                width: 500px;
+                margin-right: auto;
+            }
+        }
+
+        .history_text {
+            padding-top: 17px;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            line-height: calc(20 / 14);
+            font-weight: 600;
+            font-family: "Noto Serif JP";
+
+            @media (min-width:768px) {
+                padding-left: 28px;
+                padding-right: 28px;
+                font-size: 16px;
+            }
+
+            @media (min-width:1300px) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        .history_item.text_set {
+            @media (min-width:768px) {
+                width: calc(580 / 1100 * 100%);
+            }
+
+
+            @media (min-width:1300px) {
+                width: 500px;
+            }
+        }
+
+    }
+
+    .worship {
+        margin-top: 90px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-left: 21px;
+        padding-right: 21px;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width:768px) {
+            margin-top: 146px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .worship_title {
+            border-top: 1px solid #666666;
+            border-bottom: 1px solid #666666;
+            font-size: 24px;
+            letter-spacing: 0.08em;
+            font-weight: bold;
+            font-family: "Noto Sans Javanese";
+            display: inline-block;
+            margin-bottom: 48px;
+
+            @media (min-width:768px) {
+                font-size: 28px;
+                letter-spacing: 0.09em;
+                line-height: calc(28 / 44);
+                padding: 17px 0;
+                margin-bottom: 114px;
+                border: none;
+                width: 100%;
+                text-align: center;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 148px;
+                    height: 1px;
+                    background: #666666;
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    top: -70px;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 148px;
+                    height: 1px;
+                    background: #666666;
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    top: 70px;
+                }
+            }
+        }
+
+        .worship_img_wrap:hover {
+            overflow: hidden;
+
+            @media (min-width:768px) {
+                transform: scale(1.1);
+                transition: 1s all;
+            }
+        }
+
+
+        .worship_img_wrap {
+            display: flex;
+            align-items: flex-start;
+            background-image: url(../img/sp/washing.png);
+            width: auto;
+            min-height: 124px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+
+            @media (min-width:768px) {
+                background-image: url(../img/pc/washing.png);
+                width: auto;
+                height: 200px;
+            }
+
+            .worship_img {
+                display: block;
+                height: 124px;
+                width: auto;
+                margin: 0 auto;
+            }
+
+            .worship_text {
+                padding-top: 14px;
+                padding-left: 12px;
+                color: #fff;
+                font-size: 18px;
+                font-family: "Noto Serif JP";
+                font-weight: 600;
+                letter-spacing: 0.08em;
+                line-height: calc(20 / 18);
+
+                @media (min-width:768px) {
+                    font-size: 24px;
+                    letter-spacing: 0.09em;
+                    line-height: calc(38 / 24);
+                    padding-top: 12px;
+                    padding-left: 26px;
+                }
+            }
+        }
+
+        .worship_set {
+            width: 100%;
+
+            @media (min-width:768px) {
+                width: 48%;
+                margin: auto;
+                height: 288px;
+                margin-bottom: 52px;
+            }
+
+            @media (min-width:900px) {
+                padding-left: 56px;
+            }
+        }
+
+        .worship_img_wrap.second {
+            background-image: url(../img/sp/bell.png);
+
+            @media (min-width:768px) {
+                background-image: url(../img/pc/bell.png);
+                height: 200px;
+                width: auto;
+            }
+        }
+
+        .worship_img_wrap.third {
+            background-image: url(../img/sp/join_hands.png);
+
+            @media (min-width:768px) {
+                background-image: url(../img/pc/join_hands.png);
+                height: 200px;
+                width: auto;
+            }
+        }
+
+        .worship_img_wrap.fourth {
+            background-image: url(../img/sp/offering_money.png);
+
+            @media (min-width:768px) {
+                background-image: url(../img/pc/offering_money.png);
+                height: 200px;
+                width: auto;
+            }
+        }
+
+        .worship_text2 {
+            font-family: "Noto Serif JP";
+            font-size: 14px;
+            letter-spacing: 0.08em;
+            line-height: calc(18 / 14);
+            padding-top: 13px;
+            font-weight: normal;
+            padding-bottom: 58px;
+
+            @media (min-width:768px) {
+                font-size: 16px;
+                line-height: calc(20 / 16);
+                padding-top: 14px;
+            }
+        }
+
+        .worship_text2.last {
+            padding-bottom: 0;
+        }
+
+
+        .Note_text {
+            color: #E71313;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.08em;
+            line-height: calc(16 / 12);
+            font-family: "Noto Serif JP";
+            padding-top: 31px;
+            padding-bottom: 39px;
+            width: 100%;
+
+            @media (min-width:768px) {
+                padding-bottom: 16px;
+            }
+
+            @media (min-width:900px) {
+                line-height: calc(20 / 16);
+                margin-right: auto;
+                padding-left: 56px;
+            }
+        }
+
+        .manners_text {
+            font-size: 14px;
+            letter-spacing: 0.08em;
+            line-height: calc(16 / 14);
+            font-family: "Noto Serif JP";
+
+            @media (min-width:900px) {
+                font-size: 16px;
+                line-height: calc(20 / 14);
+                width: 100%;
+                padding-left: 56px;
+            }
+        }
+
+        .worship_set.last {
+            margin: initial;
+            margin-right: auto;
+        }
+
+        .worship_img_wrap.fifith {
+            background-image: url(../img/sp/Visit.png);
+
+            @media(min-width:768px) {
+                background-image: url(../img/pc/Visit.png);
+                height: 200px;
+                width: auto;
+
+            }
+        }
+    }
+
+    .Amulet {
+        padding-left: 21px;
+        padding-right: 21px;
+        margin-top: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1100px;
+
+        @media (min-width:768px) {
+            margin-top: 146px;
+        }
+
+        .Amulet_title {
+            border-top: 1px solid #666666;
+            border-bottom: 1px solid #666666;
+            font-size: 24px;
+            letter-spacing: 0.08em;
+            font-weight: bold;
+            font-family: "Noto Sans Javanese";
+            display: inline-block;
+            margin-bottom: 48px;
+            position: relative;
+
+            @media (min-width:768px) {
+                font-size: 28px;
+                letter-spacing: 0.09em;
+                line-height: calc(28 / 44);
+                padding: 17px 0;
+                margin-bottom: 114px;
+                border: none;
+                width: 100%;
+                text-align: center;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 210px;
+                    height: 1px;
+                    background: #666666;
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    top: -70px;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 210px;
+                    height: 1px;
+                    background: #666666;
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    top: 70px;
+                }
+            }
+        }
+    }
+
+    .Amulet_text {
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        line-height: calc(18 / 14);
+        font-family: "Noto Serif JP";
+
+        @media (min-width:980px) {
+            font-size: 16px;
+            letter-spacing: 0.09em;
+            line-height: calc(24 / 16);
+            padding-bottom: 53px;
+        }
+    }
+
+    .Amulet_img {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        @media (min-width:980px) {
+            max-width: 180px;
+        }
+    }
+
+    .Amulet_img_set {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        column-gap: 15px;
+
+        @media (min-width:980px) {
+            justify-content: space-between;
+            max-width: 1000px;
+            column-gap: 0;
+        }
+    }
+
+    .Amulets {
+        padding-top: 12px;
+
+        @media (min-width:980px) {
+            padding-top: 48px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Amulets_item {
+            font-size: 14px;
+            font-family: "Noto Serif JP";
+            letter-spacing: 0.07em;
+            line-height: calc(18 / 14);
+            padding-bottom: 2px;
+            font-weight: normal;
+
+            @media (min-width:980px) {
+                display: inline-block;
+                font-size: 16px;
+                letter-spacing: 0.09em;
+                line-height: calc(24 / 16);
+            }
+        }
+    }
+
+    .Amulets_text {
+        font-size: 14px;
+        font-family: "Noto Serif JP";
+        letter-spacing: 0.07em;
+        line-height: calc(18 / 14);
+        font-weight: normal;
+        padding-top: 19px;
+
+        @media (min-width:768px) {
+            padding-top: 42px;
+            font-size: 16px;
+            letter-spacing: 0.09em;
+            line-height: calc(24 / 16);
+        }
+    }
+}
+
+.event {
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-top: 90px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width:768px) {
+        margin-top: 146px;
+    }
+
+    .event_title {
+        border-top: 1px solid #666666;
+        border-bottom: 1px solid #666666;
+        font-size: 24px;
+        letter-spacing: 0.08em;
+        font-weight: bold;
+        font-family: "Noto Sans Javanese";
+        display: inline-block;
+        margin-bottom: 48px;
+        position: relative;
+
+        @media (min-width:768px) {
+            font-size: 28px;
+            letter-spacing: 0.09em;
+            line-height: calc(28 / 44);
+            padding: 17px 0;
+            margin-bottom: 114px;
+            border: none;
+            width: 100%;
+            text-align: center;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 125px;
+                height: 1px;
+                background: #666666;
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                top: -70px;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 125px;
+                height: 1px;
+                background: #666666;
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                top: 70px;
+            }
+        }
+    }
+}
+
+.event_img {
+    background-image: url(../img/sp/newyear_festival.png);
+    height: 140px;
+    width: auto;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width:768px) {
+        background-image: url(../img/pc/newyear_festival.png);
+        height: 297px;
+    }
+}
+
+.white_box {
+    width: 152px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width:768px) {
+        width: 300px;
+        height: 52px;
+    }
+
+    .width_box_title {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.08em;
+        line-height: calc(24 / 20);
+        font-family: "Noto Serif JP";
+
+        @media (min-width:768px) {
+            font-size: 26px;
+            letter-spacing: 0.09em;
+            line-height: calc(24 / 26);
+        }
+    }
+}
+
+.event_description {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: calc(18 / 14);
+    font-family: "Noto Serif JP";
+    padding-top: 12px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    @media (min-width:768px) {
+        font-size: 16px;
+        letter-spacing: 0.07em;
+        padding-top: 24px;
+        padding-bottom: 80px;
+    }
+}
+
+.event_img2 {
+    background-image: url(../img/sp/spring_festival.png);
+    height: 140px;
+    width: auto;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width:768px) {
+        background-image: url(../img/pc/spring_festival.png);
+        height: 297px;
+    }
+}
+
+.event_img3 {
+    background-image: url(../img/sp/autumnharvest_festival.png);
+    height: 140px;
+    width: auto;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width:768px) {
+        background-image: url(../img/pc/autumnharvest_festival.png);
+        height: 297px;
+    }
+}
+
+.event_description.last {
+    padding-bottom: 0;
+}
+
+
+.access {
+    margin-top: 90px;
+    max-width: 1100px;
+    margin-left: 21px;
+    margin-right: 21px;
+
+    @media (min-width:768px) {
+        margin-top: 146px;
+    }
+
+    @media (min-width:1100px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .access_title {
+        border-top: 1px solid #666666;
+        border-bottom: 1px solid #666666;
+        font-size: 24px;
+        letter-spacing: 0.08em;
+        font-weight: bold;
+        font-family: "Noto Sans Javanese";
+        display: inline-block;
+        margin-bottom: 48px;
+
+        @media (min-width:768px) {
+            font-size: 28px;
+            letter-spacing: 0.09em;
+            line-height: calc(28 / 44);
+            padding: 17px 0;
+            margin-bottom: 114px;
+            border: none;
+            width: 100%;
+            text-align: center;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 125px;
+                height: 1px;
+                background: #666666;
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                top: -70px;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 125px;
+                height: 1px;
+                background: #666666;
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                top: 70px;
+            }
+        }
+    }
+
+    .map {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        /* 16:9 アスペクト比 */
+        height: 0;
+        overflow: hidden;
+
+        @media (min-width:1100px) {
+            width: 400px;
+            height: 380px;
+            padding-bottom: 0;
+        }
+    }
+
+    .map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+
+        @media (min-width:1100px) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .access_list {
+        padding-top: 13px;
+        padding-bottom: 45px;
+
+        @media (min-width:1100px) {
+            padding-top: 0;
+        }
+
+        .list_item {
+            padding-bottom: 6px;
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: 0.04em;
+            line-height: calc(20 / 14);
+            font-family: "Noto Serif JP";
+
+        }
+    }
+
+    .access_list.bus {
+        padding-top: 0;
+    }
+
+    .access_list.bicycle {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

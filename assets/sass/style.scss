@@ -1,0 +1,43 @@
+                    @charset "utf-8";
+
+                    body.fixed{
+                        position: fixed;
+                    }
+
+                    body,
+                    html {
+
+                        @media (min-width:768px) {
+                            overflow-x: hidden;
+                        }
+                    }
+
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+
+                    a {
+                        color: initial;
+                        text-decoration: none;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        vertical-align: bottom;
+                    }
+
+                    ul li {
+                        list-style-type: none;
+                    }
+
+                    body {
+                        font-family: sans-serif, "Noto Serif JP";
+                        color: #666666;
+                    }
+
+                    @import "header.scss";
+                    @import "main.scss";
+                    @import "footer.scss";
